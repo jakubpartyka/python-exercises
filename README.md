@@ -1,0 +1,2 @@
+# python-thesaurus
+An exercise
