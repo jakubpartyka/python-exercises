@@ -25,6 +25,8 @@ for index, row in df.iterrows():
                                popup=info,
                                icon=folium.Icon(color='red')))
 
+fg.add_child(folium.GeoJson(data=open('data/world.json', 'r', encoding='utf-8-sig').read()))
+
 map.add_child(fg)
 
 map.save('Map1.html')
